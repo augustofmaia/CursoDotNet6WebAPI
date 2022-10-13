@@ -19,3 +19,4 @@ C:\Users\SETA\dev\CursoDotNet6WebAPI\obj\Debug\net6.0\refint\CursoDotNet6WebAPI.
 C:\Users\SETA\dev\CursoDotNet6WebAPI\obj\Debug\net6.0\CursoDotNet6WebAPI.pdb
 C:\Users\SETA\dev\CursoDotNet6WebAPI\obj\Debug\net6.0\CursoDotNet6WebAPI.genruntimeconfig.cache
 C:\Users\SETA\dev\CursoDotNet6WebAPI\obj\Debug\net6.0\ref\CursoDotNet6WebAPI.dll
+C:\Users\SETA\dev\CursoDotNet6WebAPI\bin\Debug\net6.0\appsettings.Staging.json
