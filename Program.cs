@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<AplicationDbContext>();
+
 var app = builder.Build();
 var configuration = app.Configuration;
 ProductReository.Init(configuration);
@@ -82,6 +85,15 @@ public static class ProductReository {
 }
 
 public class Product {
+    public int Id { get; set; }
     public string Code { get; set; }
     public string Name { get; set; }
+    public string Description { get; set; }
+}
+
+public class AplicationDbContext : DbContext {
+    public DbSet<Product> Products { get; set; }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder options) 
+        => options.UseSqlServer("Server=localhost;Database=Products;User Id=sa;Password=Ugug1979!;MultipleActiveResultSets=True;Encrypt=Yes;TrustServerCertificate=Yes");
 }
